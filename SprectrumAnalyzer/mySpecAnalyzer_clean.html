@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="utf-8">
+	<title>Spectrum Analyzer | Academo.org - Free, interactive, education.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="This audio spectrum analyzer enables you to see the frequencies present in audio recordings.">
+	
+<!--	<link rel="shortcut icon" type="image/png" href="/favicon-new-v2.png"> -->
+	<link rel="stylesheet" href="https://academo.org/scss/main.css?v=1611174156">
+	<style type="text/css" class='demo-specific-styles'>
+
+canvas {
+     position: absolute;
+     /*background: black;*/
+/*     width: 500px;
+     height: 500px;*/
+   }
+#canvas{
+	background: black;
+}
+ #demo{
+ 	height:540px;
+ }
+ .demo audio{
+ 	width: 80%;
+ }
+				</style>
+	
+ 
+
+</head>
+
+<body class='body--shaded '>
+
+
+<div id="demo"  class="">
+	
+</div>
+
+
+<div class="clearfix" id='ui-container'>
+</div>
+
+
+<div class="demo-description">
+
+    <hr>
+
+<canvas id="canvas"></canvas>
+<canvas id="canvas-log"></canvas>
+<canvas id="labels"></canvas>
+<div class="audio-file-wrapper interface clearfix">
+	<label>Upload your own</label>
+	<input id='audio-file' type="file">
+</div>
+
+<hr>
+    
+    	        
+ </div>
+
+ <div class="sidebar">
+ 	<hr> 
+ 	<ul class="thumbnails">
+ 	</ul>
+ 	<div style="width:160px;margin:10px auto;">
+ 	<p style='font-size: 11px;margin-bottom: 0;'>Ad</p>
+ 		
+	</div>
+ </div>
+
+
+
+
+		<!-- <script src="https://academo.org/js/lib/jquery-1.11.1.min.js"></script>
+		<script src="https://academo.org/js/all.js?v=1611174156"></script>  -->
+		<script src="./jquery-1.11.1.min.js"></script>
+		<script src="./all.js"></script>
+
+		
+
+			
+								<!--	<script src="./demo.js?v=1546088029"></script> -->
+								<script src="./demo.js"></script>
+		    
+
+			<script>
+			    //ASSET SERVING
+			    var assetPath = "./";
+
+			    $(document).trigger({
+			    	type: "scriptLoaded"
+			    });
+		    </script>
+	</body>
+</html>
